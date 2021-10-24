@@ -1,0 +1,57 @@
+/* WHOLE PAGE */
+a {
+    color: #6BF656
+}
+
+a:hover {
+    color: #FAD526;
+    font-size: 1.1rem;
+}
+
+a:visited {
+    color: #C28933;
+}
+
+body {
+    background-color: #4A412A;
+}
+
+/* HEADINGS */
+h2 {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 10rem;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-family: 
+}
+
+/* IMAGES */
+@-webkit-keyframes blink {
+    50% { 
+        border-color: yellow; 
+    }
+}
+@keyframes blink {
+    50% { 
+        border-color: yellow; 
+    }
+}
+.main__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5rem;
+    border: 
+}
+
+.main__img:hover {
+    animation: blink .5s step-end infinitite alternate;
+}
+
+.main__img {
+    border: 10px solid transparent;
+}
