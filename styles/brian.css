@@ -1,4 +1,17 @@
 /* WHOLE PAGE */
+@keyframes ugly {
+    0% {background-color: #4A412A;}
+    25% {background-color: #F0BE03}
+    50% {background-color: olive;}
+    75% {background-color: #F0BE03}
+    100% {background-color: purple;}
+}
+
+#badbackground {
+    background: blue;
+    animation: ugly 10s infinite ease;
+}
+
 a {
     color: #6BF656
 }
@@ -11,21 +24,36 @@ a:visited {
     color: #C28933;
 }
 
-body {
-    background-color: #4A412A;
-}
+/* body {
+    background: linear-gradient(90deg, #4A412A  0%, ivory 50%, #F0BE03  100%);
+    /* backgroundSize: "400% 400%"; */
+    /* animation: gradient 25s ease infinite;
+} */ 
 
 p {
     font-family: courier;
     color: white;
 }
 
+footer p {
+    padding: 50px;
+}
+
 /* HEADINGS */
+
+@keyframes title {
+    0% {transform: translateX(1000px);}
+    /* 50% {transform: translateX(0px);} */
+    100% {transform: translateX(-1100px);}
+}
+
+
 h2 {
     color: white;
     font-family: courier;
     font-size: 7rem;
     text-align: center;
+    animation: title 5s infinite;
 }
 
 h3 {
@@ -37,13 +65,45 @@ h3 {
 }
 
 /* IMAGES */
-.main__img {
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes borderflash {
+    0% {border: 10px dotted yellow;}
+    10% {border: 10px dotted red;}
+    20% {border: 10px dotted yellow;}
+    30% {border: 10px dotted red;}
+    40% {border: 10px dotted yellow;}
+    50% {border: 10px dotted red;}
+    60% {border: 10px dotted yellow;}
+    70% {border: 10px dotted red;}
+    80% {border: 10px dotted yellow;}
+    90% {border: 10px dotted red;}
+    100% {border: 10px dotted yellow;}
+}
+
+  .main__img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: -5rem;
     margin-bottom: 3rem;
     border: 4pt yellow dashed;
+    animation: fadeIn 10s;
+    -webkit-animation: fadeIn 10s;
+    -moz-animation: fadeIn 10s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    animation: borderflash 5s infinite;
+    
+
 }
 
 .team__img {
@@ -51,14 +111,55 @@ h3 {
     height: 300px;
 }
 
-.titans__img, .sc__img, .autos__img {
+.titans__img {
     margin-left: 1.5rem;
-    object-fit: cover;
+    /* object-fit: cover; */
+    object-fit: none;
+    object-position: 65% 10%;
+    border-radius: 10%;
+    border: lime solid 10pt;
 }
 
-.preds__img, .vandy__img, .sounds__img {
+.preds__img {
+    margin-right: 1.5rem;
+    object-fit: none;
+    object-position: 18% 94%;
+    box-shadow: 3px 3px black;
+}
+
+.sc__img {
+    margin-left: 1.5rem;
+    /* object-fit: cover; */
+    object-fit: cover;
+    object-position: 65% 10%;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+.vandy__img {
     margin-right: 1.5rem;
     object-fit: cover;
+    object-position: 65% 10%;
+    border-radius: 20%;
+    background-color: fuchsia;
+    transform: rotate(-56deg)
+}
+
+.autos__img {
+    margin-left: 1.5rem;
+    /* object-fit: cover; */
+    object-fit: none;
+    object-position: 48% 10%;
+    border: 20px ridge;
+    border-color: blue red; 
+}
+
+.sounds__img {
+    margin-right: 1.5rem;
+    object-fit: scale-down;
+    
+    
 }
 
 /* CAPSULE LAYOUT */
@@ -100,7 +201,7 @@ h3 {
 }
 
 .team {
-    border: solid black 1pt;
+    /* border: solid black 1pt; */
     width: 100%;
 }
 
