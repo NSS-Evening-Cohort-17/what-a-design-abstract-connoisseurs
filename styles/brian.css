@@ -4,8 +4,7 @@ a {
 }
 
 a:hover {
-    color: #FAD526;
-    font-size: 1.1rem;
+    color: blue;
 }
 
 a:visited {
@@ -16,42 +15,99 @@ body {
     background-color: #4A412A;
 }
 
+p {
+    font-family: courier;
+    color: white;
+}
+
 /* HEADINGS */
 h2 {
     color: white;
-    font-family: 'Dancing Script', cursive;
-    font-size: 10rem;
+    font-family: courier;
+    font-size: 7rem;
     text-align: center;
 }
 
 h3 {
     color: white;
-    font-family: 
+    font-family: courier;
+    font-size: 2rem;
+    margin-bottom: -.75rem;
+    margin-top: -.25rem;
 }
 
 /* IMAGES */
-@-webkit-keyframes blink {
-    50% { 
-        border-color: yellow; 
-    }
-}
-@keyframes blink {
-    50% { 
-        border-color: yellow; 
-    }
-}
 .main__img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: -5rem;
-    border: 
+    margin-bottom: 3rem;
+    border: 4pt yellow dashed;
 }
 
-.main__img:hover {
-    animation: blink .5s step-end infinitite alternate;
+.team__img {
+    width: 200px;
+    height: 300px;
 }
 
-.main__img {
-    border: 10px solid transparent;
+.titans__img, .sc__img, .autos__img {
+    margin-left: 1.5rem;
+    object-fit: cover;
+}
+
+.preds__img, .vandy__img, .sounds__img {
+    margin-right: 1.5rem;
+    object-fit: cover;
+}
+
+/* CAPSULE LAYOUT */
+/* Puts two boxes on each row */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 1024px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+/* Puts text next to photo for items in left column */
+.team--allInfoLeft {
+    display: flex;
+    flex-direction: row-reverse; /*puts image on right*/
+    justify-content: space-between;
+}
+
+/* Puts text next to photo for items in right column */
+.team--allInfoRight {
+    display: flex;
+    flex-direction: row; /*puts image on left*/
+    justify-content: space-between;
+}
+
+/* Puts schedule and tickets on one line */
+.info--details {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info--details--right {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.team {
+    border: solid black 1pt;
+    width: 100%;
+}
+
+.info {
+    text-align: right;
+}
+ 
+.info--right {
+    text-align: left;
 }
