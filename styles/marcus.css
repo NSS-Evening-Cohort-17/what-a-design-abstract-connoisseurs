@@ -1,0 +1,145 @@
+.house {
+    background-image: url("../marcus-images/House.jpg");
+}
+.Logo{
+    margin: auto;
+    text-align: center;
+    color: rgb(60, 255, 0);
+}
+.Test{
+    display: flex;
+}
+.top{
+  display: flex;
+  margin-bottom: -98px;
+}
+.Hampster {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  display:inline-block;
+  vertical-align:middle;
+}
+.Pig {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  display:inline-block;
+  vertical-align:middle;
+}
+.middle{
+  display: flex;
+}
+.Steven_Button{
+    margin: auto;
+    width: 600;
+}
+.Paragraph_Box{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 122px;
+    margin: 320px;
+    margin-top: 129px;
+    margin-block-end: -49px;
+    font-size: x-large;
+    color: rgb(60, 255, 0);
+}
+.Jake_Button{
+    margin: auto;
+    height: 499;
+    width: 41px;
+}
+.Jake_Text{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+.bottom{
+  display: flex;
+}
+.Brian_Button{
+    margin: auto;
+    width: 600;
+}
+.Marcus_Button{
+    margin: auto;
+    height: 499;
+    width: 41px;
+}
+.Marcus_Text{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+.Owl {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .Wild_Animals{
+    display: flex;
+  }
+  .Wolf {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .Duck{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    display:inline-block;
+    vertical-align:middle;
+
+  }
+  .Rabbit {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .Panther{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .Fox {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .GIF{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* background-color: rgb(255, 255, 255); */
+    display:inline-block;
+    vertical-align:middle;
+    justify-content: center;
+  }
