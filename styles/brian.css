@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+
 /* WHOLE PAGE */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 @keyframes ugly {
     0% {background-color: #4A412A;}
     25% {background-color: #F0BE03}
@@ -17,18 +25,12 @@ a {
 }
 
 a:hover {
-    color: blue;
+    color: rgb(255, 0, 191);
 }
 
 a:visited {
-    color: #C28933;
+    color: #4e1e08;
 }
-
-/* body {
-    background: linear-gradient(90deg, #4A412A  0%, ivory 50%, #F0BE03  100%);
-    /* backgroundSize: "400% 400%"; */
-    /* animation: gradient 25s ease infinite;
-} */ 
 
 p {
     font-family: courier;
@@ -39,12 +41,36 @@ footer p {
     padding: 50px;
 }
 
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: pink;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+}
+.navbar__img {
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /* HEADINGS */
 
 @keyframes title {
-    0% {transform: translateX(1000px);}
+    0% {transform: translateX(1500px);}
     /* 50% {transform: translateX(0px);} */
-    100% {transform: translateX(-1100px);}
+    100% {transform: translateX(-1500px);}
 }
 
 
@@ -211,4 +237,8 @@ h3 {
  
 .info--right {
     text-align: left;
+}
+
+.autoFont {
+    font-family: 'Qahiri', sans-serif;
 }
