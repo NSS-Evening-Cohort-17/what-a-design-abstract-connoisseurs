@@ -58,6 +58,21 @@ h1 {
     }
 }
 
+@keyframes strobe2 {
+    from {
+        background-color: blue;
+        
+    }
+
+    50% {
+        background-color: rgb(255, 0, 255);
+    }
+
+    to {
+        background-color: orange;
+    }
+}
+
 .middle {
     display: flex;
     justify-content: space-between;
@@ -86,7 +101,12 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    background-color: blue;
+    animation-duration: 2s;
+    animation-name: strobe2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-right: 10px ridge yellow;
+    border-bottom: 10px ridge yellow;
 }
 
 .button img:hover {
