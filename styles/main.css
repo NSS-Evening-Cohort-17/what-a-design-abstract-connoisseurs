@@ -1,0 +1,47 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(12, 12, 12);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  body  {
+    background-image: url("http://nashvilleguru.com/officialwebsite/wp-content/uploads/2018/01/IMG_2078.jpg");
+    background-color: #cccccc; 
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+  article{
+    display: flex;
+    text-align: center;
+    border-style: solid;
+    flex-direction: column;
+    background-color: aliceblue;
+    margin: inherit;
+  }
+  p {
+      color: rgb(0, 8, 8);
+      font-size: xx-large;
+  }
