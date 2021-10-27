@@ -1,3 +1,13 @@
+header {
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+body {
+    padding-top: 5%;
+}
 
 .navbar {
     display: flex;
@@ -16,10 +26,22 @@ ul {
     justify-content: space-around;
 }
 
+.concerts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.restaurants {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 h1 {
     display: flex;
     justify-content: center;
-    background-color: red;
+    border-radius: 50%;
+    background-color: purple;
     border: 5px solid black;
     color: white;
 }
@@ -27,17 +49,17 @@ h1 {
 h2 {
     display: flex;
     justify-content: center;
-    background-color: red;
+    background-color: blue;
     border: 5px solid black;
     color: white;
 }
 
 footer {
+    padding-top: 5%;
     display: flex;
-    align-content: flex-end;
-    border: 5px solid black;
+    justify-content: space-evenly;
     color: white;
-    background-color: blue;
+    bottom: 0;
 }
 
 body {
@@ -46,3 +68,40 @@ body {
   background-attachment: fixed;
   background-size: 25%;
 }
+
+.button {
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 100;
+    display: flex;
+  }
+
+  .alert {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .copyright {
+      font-size: 25px;
+  }
